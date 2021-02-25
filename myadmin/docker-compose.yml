@@ -29,6 +29,11 @@ services:
 #    ports:
 #      - 3306:3306
 
+  pink:
+    build: ../helloworld
+    ports:
+      - 80:80
+
 networks:
   backend:
     name: test-back
