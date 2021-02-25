@@ -30,7 +30,7 @@ services:
 #      - 3306:3306
 
   pink:
-    build: ../helloworld
+    build: helloworld/.
     ports:
       - 80:80
 
