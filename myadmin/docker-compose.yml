@@ -1,23 +1,36 @@
 version: '3.9'
 
 services:
-  database:
-    image: mysql:latest
-    volumes:
-      - d:\formation\docker\ynov\maj3\mysql\db:/var/lib/mysql
-    environment: 
-      MYSQL_ROOT_PASSWORD: bob
-      MYSQL_DATABASE: base1
-      MYSQL_USER: bob
-      MYSQL_PASSWORD: boby
-    ports:
-      - 3306:3306
-
   myadmin:
     image: phpmyadmin:latest
     ports:
       - 8085:80
     environment: 
       PMA_PORT: 3306
-      MYSQL_ROOT_PASSWORD: bob
+      MYSQL_ROOT_PASSWORD: ${ROOT_PASSWD}
       PMA_HOST: database
+    networks: 
+      - backend
+      - frontend
+    depends_on: 
+      - database
+
+  database:
+    image: mysql:latest
+    volumes:
+      - d:\formation\docker\ynov\maj3\mysql\db:/var/lib/mysql
+    environment: 
+      MYSQL_ROOT_PASSWORD: ${ROOT_PASSWD}
+      MYSQL_DATABASE: ${DEFAULT_DB}
+      MYSQL_USER: bob
+      MYSQL_PASSWORD: boby
+    networks: 
+      - backend
+#    ports:
+#      - 3306:3306
+
+networks:
+  backend:
+    name: test-back
+  frontend:
+    name: test-front
