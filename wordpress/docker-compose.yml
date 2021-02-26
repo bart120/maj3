@@ -1,0 +1,54 @@
+version: '3.9'
+
+services:
+
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 80:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: ${USER_NAME}
+      WORDPRESS_DB_PASSWORD: ${USER_PWD}
+      WORDPRESS_DB_NAME: ${DB_NAME}
+    volumes:
+      - d:\formation\docker\ynov\volumes\wordpress\wp:/var/www/html
+    depends_on: 
+      - db
+    networks: 
+      - wpnet
+      - wpdb
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${USER_NAME}
+      MYSQL_PASSWORD: ${USER_PWD}
+      MYSQL_ROOT_PASSWORD: bob
+    volumes:
+      - d:\formation\docker\ynov\volumes\wordpress\db:/var/lib/mysql
+    networks: 
+      - wpdb
+
+  myadmin:
+    image: phpmyadmin:latest
+    ports:
+      - 8080:80
+    environment: 
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: ${ROOT_PASSWD}
+      PMA_HOST: db
+    networks: 
+      - wpnet
+      - wpdb
+    depends_on: 
+      - db
+
+networks:
+  wpnet:
+    name: wpnet
+  wpdb:
+    name: dbnet
