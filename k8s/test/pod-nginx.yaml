@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hello-nginx-pod
+  namespace: test
+spec:
+  template:
+    spec:
+      containers:
+      - name: hello-gninx-cont
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+      restartPolicy: OnFailure
+
+
+
