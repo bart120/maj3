@@ -1,0 +1,5 @@
+# dans un namespace "press"
+# deploiement de 1 pod d'une base de données mysql
+# deploiement de 3 pods wordpress
+# service d'acès à mysql interne au cluster
+# service d'acès à l'application wordpress depuis l'extérieur
