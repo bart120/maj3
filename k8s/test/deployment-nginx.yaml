@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-nginx-deployment
+  namespace: test
+  labels:
+    app: hello-nginx
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: hello-nginx-pod
+  template:
+    metadata:
+      labels:
+        app: hello-nginx-pod
+    spec:
+      containers:
+      - name: hello-gninx-cont
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+      restartPolicy: Always
+
