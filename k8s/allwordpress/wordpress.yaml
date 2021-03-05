@@ -61,6 +61,13 @@ spec:
         volumeMounts:
         - name: mysql-volume
           mountPath: /var/lib/mysql
+        resources:
+            requests:
+              memory: 300Mi
+              cpu: 250m
+            limits:
+              memory: 500Mi
+              cpu: 500m
       volumes:
       - name: mysql-volume
         persistentVolumeClaim:
@@ -81,6 +88,18 @@ spec:
     - port: 3306
       targetPort: 3306
   type: ClusterIP
+
+#---
+#endpoint
+#apiVersion: v1
+#kind: Endpoints
+#matadata:
+#  name: mysql-service
+#subsets:
+#  - adresses:
+#    - ip: 10.1.0.90  
+#    ports:
+#    - port: 3306
 
 ---
 #deployment wordpress
@@ -115,6 +134,13 @@ spec:
           value: wppassword
         - name: WORDPRESS_DB_USER
           value: wpuser
+        resources:
+          requests:
+            memory: 64Mi
+            cpu: 250m
+          limits:
+            memory: 128Mi
+            cpu: 500m
       restartPolicy: Always
       
 ---
