@@ -1,5 +1,92 @@
 # dans un namespace "press"
-# deploiement de 1 pod d'une base de données mysql
+# deploiement de 1 pod d'une base de données mysql (attention, on parle d'une base de données!!!!!!)
 # deploiement de 3 pods wordpress
-# service d'acès à mysql interne au cluster
-# service d'acès à l'application wordpress depuis l'extérieur
+# service d'accès à mysql interne au cluster
+# service d'accès à l'application wordpress depuis l'extérieur
+
+# namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: press
+
+---
+#volume
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-volume-claim
+  namespace: press
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+
+---
+#deployment mysql
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-deployment
+  namespace: press
+  labels:
+    app: mysql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql-pod
+  template:
+    metadata:
+      labels:
+        app: mysql-pod
+    spec:
+      containers:
+      - image: mysql:5.6
+        name: mysql-cont
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: bob
+        - name: MYSQL_DATABASE
+          value: wordpress
+        - name: MYSQL_USER
+          value: wpuser
+        - name: MYSQL_PASSWORD
+          value: wppassword
+        ports:
+        - containerPort: 3306
+          name: mysql-port
+        volumeMounts:
+        - name: mysql-volume
+          mountPath: /var/lib/mysql
+      volumes:
+      - name: mysql-volume
+        persistentVolumeClaim:
+          claimName: mysql-volume-claim
+      restartPolicy: Always
+
+---
+#service mysql
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-service
+  namespace: press
+spec:
+  selector:
+    app: mysql-pod
+  ports:
+    - port: 3306
+      targetPort: 3306
+  type: ClusterIP
+
+---
+#deployment wordpress
+
+
+
+
+
+
