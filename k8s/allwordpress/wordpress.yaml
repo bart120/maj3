@@ -12,17 +12,17 @@ metadata:
 
 ---
 #volume
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: mysql-volume-claim
-  namespace: press
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 2Gi
+#apiVersion: v1
+#kind: PersistentVolumeClaim
+#metadata:
+#  name: mysql-volume-claim
+#  namespace: press
+#spec:
+#  accessModes:
+#    - ReadWriteOnce
+#  resources:
+#    requests:
+#      storage: 2Gi
 
 ---
 #deployment mysql
@@ -58,9 +58,9 @@ spec:
         ports:
         - containerPort: 3306
           name: mysql-port
-        volumeMounts:
-        - name: mysql-volume
-          mountPath: /var/lib/mysql
+#        volumeMounts:
+#        - name: mysql-volume
+#          mountPath: /var/lib/mysql
 #        resources:
 #            requests:
 #              memory: 300Mi
@@ -68,11 +68,11 @@ spec:
 #            limits:
 #              memory: 500Mi
 #              cpu: 500m
-      volumes:
-      - name: mysql-volume
-        persistentVolumeClaim:
-          claimName: mysql-volume-claim
-      restartPolicy: Always
+#      volumes:
+#      - name: mysql-volume
+#        persistentVolumeClaim:
+#          claimName: mysql-volume-claim
+#      restartPolicy: Always
 
 ---
 #service mysql
