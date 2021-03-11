@@ -61,13 +61,13 @@ spec:
         volumeMounts:
         - name: mysql-volume
           mountPath: /var/lib/mysql
-        resources:
-            requests:
-              memory: 300Mi
-              cpu: 250m
-            limits:
-              memory: 500Mi
-              cpu: 500m
+#        resources:
+#            requests:
+#              memory: 300Mi
+#              cpu: 250m
+#            limits:
+#              memory: 500Mi
+#              cpu: 500m
       volumes:
       - name: mysql-volume
         persistentVolumeClaim:
@@ -134,13 +134,13 @@ spec:
           value: wppassword
         - name: WORDPRESS_DB_USER
           value: wpuser
-        resources:
-          requests:
-            memory: 64Mi
-            cpu: 250m
-          limits:
-            memory: 128Mi
-            cpu: 500m
+#        resources:
+#          requests:
+#            memory: 64Mi
+#            cpu: 250m
+#          limits:
+#            memory: 128Mi
+#            cpu: 500m
       restartPolicy: Always
       
 ---
@@ -154,12 +154,61 @@ spec:
   selector:
     app: wordpress-pod
   ports:
-    - port: 8080
+    - port: 80
       targetPort: 80
-  type: LoadBalancer
+  type: ClusterIP
 
+---
+#deployment wordpress
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myadmin-deployment
+  namespace: press
+  labels:
+    app: myadmin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myadmin-pod
+  template:
+    metadata:
+      labels:
+        app: myadmin-pod
+    spec:
+      containers:
+      - name: myadmin-cont
+        image: phpmyadmin:latest
+        ports:
+          - containerPort: 80
+        env: 
+        - name: MYSQL_ROOT_PASSWORD
+          value: bob
+        - name: PMA_HOST
+          value: mysql-service
+#        resources:
+#          requests:
+#            memory: 64Mi
+#            cpu: 250m
+#          limits:
+#            memory: 128Mi
+#            cpu: 500m
+      restartPolicy: Always
 
-
-
+---
+#service wordpress
+apiVersion: v1
+kind: Service
+metadata:
+  name: myadmin-service
+  namespace: press
+spec:
+  selector:
+    app: myadmin-pod
+  ports:
+    - port: 80
+      targetPort: 80
+  type: ClusterIP
 
 
