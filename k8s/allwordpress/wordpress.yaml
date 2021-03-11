@@ -159,7 +159,7 @@ spec:
   type: ClusterIP
 
 ---
-#deployment wordpress
+#deployment myadmin
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -197,7 +197,7 @@ spec:
       restartPolicy: Always
 
 ---
-#service wordpress
+#service myadmin
 apiVersion: v1
 kind: Service
 metadata:
