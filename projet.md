@@ -101,7 +101,7 @@ Les groupes sont les suivants:
 - Groupe 6: Brahim OUARRADI, Hyunsuk KIM
 - Groupe 7: Idrissa LAM, Taha MEZGOURIA
 - Groupe 8: Christian PANETIER
-- Groupe 9: 
+- Groupe 9: Othman EL MAARY, Jérémie NGOMBE EFONTSE
 
 Les horaires de passage des groupes sont les suivants:
  
