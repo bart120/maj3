@@ -1,5 +1,5 @@
 
-# Projet Conteneurisation et Orchestration (version beta)
+# Projet Conteneurisation et Orchestration
 
 Vous allez faire un projet conteneur et orchestration utilisant les technolgies de votre choix pour la partie docker et Kubernetes pour la partie orchestration.
 
