@@ -93,9 +93,15 @@ Pour tout autre type de fichier, veuillez demander à l'enseignant si son inclus
 La soutenance dure 20 à 30 minutes durant lesquelles les membres présentent leur travail. Un échange de questions peut se faire entre le professeur et les membres du groupe.
 
 Les groupes sont les suivants:
-- 
-- 
-- 
+- Groupe 1: Syvan BANSIMBA, Mehdi BAHADOU
+- Groupe 2: Noëlly RAULT, Nicolas PROUDHOM
+- Groupe 3: Mohamed Mehdi NEKMOUCHE, Gabriel BERGA
+- Groupe 4: Florian AGNES, Louis PAUTASSO
+- Groupe 5: Habib BENAOUDA, Salim KOUFI
+- Groupe 6: Brahim OUARRADI, Hyunsuk KIM
+- Groupe 7: Idrissa LAM, Taha MEZGOURIA
+- Groupe 8: Christian PANETIER
+- Groupe 9: 
 
 Les horaires de passage des groupes sont les suivants:
  
