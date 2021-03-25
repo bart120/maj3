@@ -1,6 +1,5 @@
 
 # Projet Architecture logiciel
-Vous allez faire un projet conteneur et orchestration utilisant les technolgies de votre choix pour la partie docker et Kubernetes pour la partie orchestration.
 
 # I- Sujet
 
@@ -35,20 +34,19 @@ Un dossier suivant ce modèle sera ainsi constitué :
 ### Conseils sur la rédaction de votre dossier d'architecture 
 * Rester bref, chaque mot doit avoir son utilité. Pas d’explication bateau type ‘ceci est l’introduction’, pas de redites d’autres documents, de l’historique de l’entreprise ou de concepts vagues ;
 * Un lecteur doit comprendre le fonctionnement et les contraintes de l’application sans être noyé de détails. Le document doit rester maintenable et à jour ;
-* Si l’application suit une architecture standardisée par l’organisation, ne jamais la répéter (principe https://en.wikipedia.org/wiki/Don%27t_repeat_yourself[DRY]) et se référer à un document commun ;
+* Si l’application suit une architecture standardisée par l’organisation, ne jamais la répéter et se référer à un document commun ;
 * Si un chapitre n’est pas applicable, ne pas le laisser vide mais simplement mentionner `N/A` pour que le lecteur sache que le sujet a été traité ou `TODO` s'il reste à compléter ;
 * Ce modèle se veut suffisamment complet pour couvrir la plupart des applications. Il est donc normal que de nombreux chapitres ne soient pas applicables dans votre contexte ; 
 * Lister les hypothèses d’architecture et études en cours dans le chapitre "Points non statués" de chaque volet (ils doivent être exceptionnels, sinon le DA est rédigé trop tôt) ;
 * Isoler dans des annexes en fin de document les informations d'architecture importantes mais concernant des points précis n’intéressant que peu de lecteurs ;
 
 ### Que ne trouve-t-on *PAS* dans ce document ?
-** la conception détaillée du projet (diagrammes UML de classes, de séquences ...) sauf pour présenter un pattern général spécifique à l’application ;
-** des éléments d’études (SWOT, scénarios…) : les choix doivent déjà avoir été faits ;
-** l’urbanisation du SI (nous nous positionnons ici au niveau d’une application ou d’un ensemble de composants cohérents) ;
-** les règles d'architecture de référence (communes à toutes les applications) ;
-** des détails techniques (IP, logins) pouvant compromettre la sécurité ;
-** l'architecture physique (détails des serveurs et datacenters, architecture réseau, architecture de stockage, provisioning...). Il s'agit de sujets très pointus et en général traités par les architectes d'infrastructure à un niveau SI ;
-** le détail des environnements autres que la production (recette, développement...). Ces derniers sont en général trop fluctuants pour figurer dans ce dossier et gagneront à plutôt être documentés par l'intégrateur dans d'autres dossiers, fiches, wikis ou outils de CMDB.
+* la conception détaillée du projet (diagrammes UML de classes, de séquences ...) sauf pour présenter un pattern général spécifique à l’application ;
+* des éléments d’études (SWOT, scénarios…) : les choix doivent déjà avoir été faits ;
+* l’urbanisation du SI (nous nous positionnons ici au niveau d’une application ou d’un ensemble de composants cohérents) ;
+* les règles d'architecture de référence (communes à toutes les applications) ;
+* des détails techniques (IP, logins) pouvant compromettre la sécurité ;
+* le détail des environnements autres que la production (recette, développement...). Ces derniers sont en général trop fluctuants pour figurer dans ce dossier et gagneront à plutôt être documentés par l'intégrateur dans d'autres dossiers, fiches, wikis ou outils de CMDB.
 
 # Groupes et fonctionnement
 
