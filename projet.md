@@ -39,7 +39,7 @@ N'oublier pas d'utiliser les étiquettes afin d'organiser vos éléments de mani
 Afin de ne pas avoir de problèmes de surcharge, chaque pod devra avoir une limite de consommation CPU, mémoire et disque ainsi que des demandes de ressources définies.
 Les pods devront également redémarrer automatiquement si ils tombent.
 Il vous faudra définir des "règles d'affinité" entre vos éléments afin d'en améliorer les performances dans les échanges.
-Ressources limites par app:
+Ressources par app:
 - web => CPU 4m, MEM 500Mi
 - applicants.api => CPU 3m, MEM 200Mi
 - identity.api => CPU 3m, MEM 200Mi
@@ -47,6 +47,15 @@ Ressources limites par app:
 - sql.data => CPU 170m, MEM 1500Mi
 - rabbitmq => CPU 4m, MEM 300Mi
 - user.data => CPU 4m, MEM 100Mi
+
+Ressources limittes par app:
+- web => CPU 6m, MEM 1000Mi
+- applicants.api => CPU 6m, MEM 1000Mi
+- identity.api => CPU 6m, MEM 1000Mi
+- jobs.api => CPU 6m, MEM 1000Mi
+- sql.data => CPU 250m, MEM 2500Mi
+- rabbitmq => CPU 8m, MEM 800Mi
+- user.data => CPU 8m, MEM 800Mi
 
 Affinité:
 - Web => jobs.api et applicants.api
