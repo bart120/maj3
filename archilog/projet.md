@@ -54,7 +54,6 @@ Un dossier suivant ce modèle sera ainsi constitué :
 * Isoler dans des annexes en fin de document les informations d'architecture importantes mais concernant des points précis n’intéressant que peu de lecteurs ;
 
 ### Que ne trouve-t-on *PAS* dans ce document ?
-* la conception détaillée du projet (diagrammes UML de classes, de séquences ...) sauf pour présenter un pattern général spécifique à l’application ;
 * des éléments d’études (SWOT, scénarios…) : les choix doivent déjà avoir été faits ;
 * l’urbanisation du SI (nous nous positionnons ici au niveau d’une application ou d’un ensemble de composants cohérents) ;
 * les règles d'architecture de référence (communes à toutes les applications) ;
