@@ -70,7 +70,6 @@ Le sujet du mail doit contenir votre section ainsi que le nom du projet.
 Les fichiers rendus peuvent aussi comprendre: 
   - Des documents de recherche créés pour le projet et fournissant plus de détails pour l'enseignant.
 Pour tout autre type de fichier, veuillez demander à l'enseignant si son inclusion est appropriée.
-La soutenance dure 20 à 30 minutes durant lesquelles les membres présentent leur travail. Un échange de questions peut se faire entre le professeur et les membres du groupe.
 
 Les groupes sont les suivants:
 - Ramirez Tristant	PREDY Marwin	
