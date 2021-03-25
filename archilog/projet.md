@@ -84,17 +84,17 @@ Les fichiers rendus peuvent aussi comprendre:
 Pour tout autre type de fichier, veuillez demander à l'enseignant si son inclusion est appropriée.
 
 Les groupes sont les suivants:
-- Ramirez Tristant	PREDY Marwin	
+- Ramirez Tristan	PREDY Marwin	
 - MARTIN Matthieu	LEMOAL Baptiste	
 - KASSOURI Cherif	MICHEL Tanguy	
 - GOULLEY Aurélien	Ousmane	
-- KALWAROWSKI Aude	Aminata	
-- Ka Sidy	ABBONEAU Cyril	Florian BELLAIR
+- KALWAROWSKI Aude NDIAYE	Aminata	
+- Ka Sidy	BONEAU Cyril	Florian BELLAIR
 - Truong Jonathan	Amar Maha	
 - LE HEN Diego	BOSGAERD Rémi	
 - Pinard Bastien	CELEBY Jerome	
 - Aka Jean Elisée	NGOUNÉ Cédric	
-- MATTE Floran	TEDESCO Paul	
+- MAITTE Floran	TEDESCO Paul	
 - TRAN VAN Léon	Kévin Cassar	
 - Wassim KHADRAOUI	Nourhen BARHOUMI	
 - Abdessalam Benharira	Naomi Paulmin	
