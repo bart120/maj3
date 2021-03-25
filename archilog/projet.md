@@ -11,6 +11,19 @@ A partir du cahier des charges ci-joint et des informations ci-dessous, Vous dev
 - La/les architectures logiciel utilisées
 - Délais de réalisation
 
+## Principaux diagrammes UML
+* cas d’utilisation : interactions entre le système et les utilisateurs (et autres systèmes externes). Il aide dans la visualisation des exigences / besoins ;
+* activité : séquence et parallélisme dans les activités du système ; autrement dit, modélisation des processus métier avec les échanges de données
+* classes : classes, types, interfaces et relations entre eux ;
+* objets : instances de classes définissant une configuration importante du système ;
+* machine à états4 : états des classes à travers leur cycle de vie (de la création / instanciation des objets à leur destruction) et les événements qui provoquent les transitions / changements d’états ;
+interaction, qui se décline en deux types de diagrammes :
+* séquence : interactions entre des objets pour lesquelles l’ordre des interactions est important ;
+* communications5 : interactions entre objets pour lesquels les connexions entre objets sont importantes ;
+* composants : rassemblements de classes ou de composants tels que vus par l’équipe de développement pour décomposer le système en parties de logiciel gérables (du point de vue développement en gestion de projet) ;
+* paquetages : rassemblement d’éléments de modélisation par exemple pour les distribuer entre membres de l’équipe de développement ;
+* déploiement : unités d’installation, de configuration et de déploiement du produit fini sur un parc de machines.
+
 ## modele-da
 
 Modèle de Dossier d'Architecture (DA) applicable à la plupart des projets d'informatique de gestion, indépendamment de l'architecture générale retenue (monolithe, SOA, micro-service, n-tiers, ...).
