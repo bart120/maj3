@@ -90,7 +90,7 @@ Les groupes sont les suivants:
 - GOULLEY Aurélien	Ousmane	
 - KALWAROWSKI Aude NDIAYE	Aminata	
 - Ka Sidy	BONEAU Cyril	Florian BELLAIR
-- Truong Jonathan	Amar Maha	
+- Truong Jonathan	Amar Maha	LEVEQUE Luc
 - LE HEN Diego	BOSGAERD Rémi	
 - Pinard Bastien	CELEBY Jerome	
 - Aka Jean Elisée	NGOUNÉ Cédric	
@@ -100,7 +100,7 @@ Les groupes sont les suivants:
 - Abdessalam Benharira	Naomi Paulmin	
 - Madjid Djennane	AYOUNI Charif	
 - RAHMANE Rahan	Bob Mery	
-- BARKA Ramy	LEVEQUE Luc	
+- Ramy Barka MAGAUD Sean
 - VIRY Quentin		
 - BOUGHDIRI Rachida		
 
