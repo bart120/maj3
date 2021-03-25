@@ -61,7 +61,6 @@ Toute inscription est définitive.  Les étudiants ne sont pas autorisés, par l
 Le rendu aura lieux le jeudi 1er avril 2021.
 
 Les rendus doivent figurer sur un seul compte par groupe.
-Le rendu s'effectu via un repos GIT ou SVN. L'adresse du rendu est envoyé par mail.
 Le mail de rendu est madani.boukebeche@ynov.com avec en copie vincent.leclerc@ynov.com
 Les fichiers rendus doivent contenir
   - Les fichiers et documents techniques du projet.
