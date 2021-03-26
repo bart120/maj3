@@ -126,9 +126,9 @@ Les groupes sont les suivants:
 
 Les horaires de passage des groupes sont les suivants:
  
+- 9h30:
 - 10h:
 - 10h30:
-- 11h:
 - 11h30:
 - 12h:
 - 12h30:
