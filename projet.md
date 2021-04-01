@@ -97,6 +97,7 @@ Les étudiants sont encouragés (mais pas obligés) à mettre en place un systè
 # Soutenance et rendu
 
 La soutenance aura lieux le jeudi 1er avril 2021.
+Le rendu se fera le lundi 5 avril à 23h59 maxi.
 La soutenance se déroulera sur Teams, chaque membre devra mettre sa caméra et son micro afin de participer.
 Les horaires de passage sont définis pour chaque groupe.
 Toute absence à la soutenance entrainera un 0 (ZERO) pour le membre du groupe.

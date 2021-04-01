@@ -70,7 +70,7 @@ Toute inscription est définitive.  Les étudiants ne sont pas autorisés, par l
 
 # Soutenance et rendu
 
-Le rendu aura lieux le jeudi 1er avril 2021.
+Le rendu aura lieux jusqu'au lundi 5 avril 23h59.
 
 Les rendus doivent figurer sur un seul compte par groupe.
 Le mail de rendu est madani.boukebeche@ynov.com avec en copie vincent.leclerc@ynov.com
